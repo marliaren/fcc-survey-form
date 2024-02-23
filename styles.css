@@ -1,0 +1,91 @@
+body {
+    background-color: #0A0A23;
+    font-family: Tahoma;
+    font-size: 15px;
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  .container {
+    width: 80%;
+    background-color: #3B3B4F;
+    margin: 0 auto;
+    box-shadow: 0 0 10px;
+    border-radius: 10px;
+  }
+  
+  h1, p {
+    text-align: center;
+    margin: 1em auto;
+    padding: 0 30px;
+  }
+  
+  p {
+    font-style: italic;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    padding-top: 20px;
+  }
+   
+  form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: auto;
+    padding-bottom: 2em;
+  }
+  
+  fieldset {
+    border: none;
+    padding: 0.5rem 0;
+  }
+  
+  label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  input,
+  textarea,
+  select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 3em;
+    border-radius: 5px;
+  }
+  
+  input, textarea, select {
+    padding: 0 10px;
+  }
+  
+  .inline {
+    width: unset;
+    vertical-align: middle;
+    margin: 0 0.5em;
+    display: inline;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  
+  input[type="submit"], input[type="reset"] {
+    margin: 1em 0.1em;
+    height: 2em;
+    font-size: 1rem;
+    background-color: #ffff;
+    border: none;
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+  }
+  
+  input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #0A0A23;
+    color: #fff;
+  }
