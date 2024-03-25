@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>freeCodeCamp Survey Form</title>
+
+     <!-- bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -13,54 +16,48 @@
 
       <form id="survey-form">
         <fieldset>
-          <label for="name" id="name-label"> Name: 
-            <input id="name" name="name" type="text" required placeholder="Enter your name."/>
-          </label>
+          <label for="name" id="name-label"> Name: </label>
+          <input class="form-control" id="name" name="name" type="text" required placeholder="Enter your name."/>
 
-          <label for="email" id="email-label"> Email: 
-            <input id="email" name="email" type="email" required placeholder="Enter your email."/>
-          </label>
+          <label for="email" id="email-label"> Email: </label>
+          <input class="form-control"  id="email" name="email" type="email" required placeholder="Enter your email."/>
 
-          <label for="number" id="number-label"> Age (optional): 
-            <input id="number" name="number" type="number" min="5" max="150" required placeholder="Enter your age."/>
-          </label>
+          <label for="number" id="number-label"> Age (optional): </label>
+          <input class="form-control" id="number" name="number" type="number" min="5" max="150" required placeholder="Enter your age."/>
         </fieldset>
 
         <fieldset>
-          <label for="dropdown" id="dropdown-label"> Which option describes your current role?
-            <select id="dropdown" required> =
+          <label for="dropdown" id="dropdown-label"> Which option describes your current role? </label>
+            <select id="dropdown" class="form-select" required> 
               <option value="">(Select current role)</option>
               <option value="1">Student</option>
               <option value="2">Full Time Job</option>
               <option value="3">Full Time Learner</option>
               <option value="4">Prefer not to say</option>
-                <option value="5">Other</option>
+              <option value="5">Other</option>
             </select>
-          </label>
         </fieldset>
 
         <fieldset>
-            <label> Would you recommend freeCodeCamp to friends/colleagues?
+            <label> Would you recommend freeCodeCamp to friends/colleagues? </label>
           <label for="radio1"> <input name="radio-grp" type="radio" checked value="definitely" class="inline"/> Definitely </label>
           <label for="radio2"> <input name="radio-grp" type="radio" value="maybe" class="inline" /> Maybe </label>
           <label for="radio3"> <input name="radio-grp" type="radio" value="no" class="inline" /> Hell Nah. </label>
-        </label>
         </fieldset>
 
         <fieldset>
-          <label for="dropdown2" id="dropdown2-label"> What is your favorite feature of freeCodeCamp?
-            <select id="dropdown2" required> =
+          <label for="dropdown2" id="dropdown2-label"> What is your favorite feature of freeCodeCamp? </label>
+            <select id="dropdown2" class="form-select" required> 
               <option value="">(Select option)</option>
               <option value="challenge">Challenges</option>
               <option value="projects">Projects</option>
               <option value="community">Community</option>
               <option value="open-source">Open Source</option>
             </select>
-          </label>
         </fieldset>
 
         <fieldset>
-          <label> What would you like to see improved?
+          <label> What would you like to see improved? </label>
             <label for="front-end">
               <input id="front-end" name="front-end" type="checkbox" value="front-end" class="inline"> Front-End Projects
             </label>
@@ -98,21 +95,18 @@
               <input id="wiki" name="wiki" type="checkbox" value="wiki" class="inline"> Wiki
             </label>
 
-        <label for="forums">
+          <label for="forums">
               <input id="forums" name="forums" type="checkbox" value="forums" class="inline"> Forums
             </label>
 
             <label for="additional-courses">
               <input id="additional-courses" name="additional-courses" type="checkbox" value="additional-courses" class="inline"> Additional Courses
             </label>
-
-          </label>
-
         </fieldset>
 
-    <label> Got any comments or suggestions?
-        <textarea placeholder="Enter comments and suggestions here." rows="3" cols="40"></textarea>
-    </label>
+      <label> Got any comments or suggestions? </label>
+      <textarea placeholder="Enter comments and suggestions here." rows="3" cols="40" class="form-control"></textarea>
+
 
   <div class="buttons">
       <input type="submit" id="submit" value="Submit"/>
